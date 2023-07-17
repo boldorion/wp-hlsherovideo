@@ -2,7 +2,7 @@
 /*
 Plugin Name: Enable HLS video playback in Elementor heros
 Description: Make HLS video playback possible in Elementor heros. 
-Version: 0.0.2
+Version: 0.0.3
 Author: BoldOrion
 Author URI: https://www.boldorion.com
 Text Domain: boldorion
@@ -31,7 +31,7 @@ add_action('wp_footer', 'add_hls_snippet',100);
 
 function add_hls_script()
 {
-    wp_enqueue_script('hls-light', plugin_dir_url(__FILE__) . 'js/hls.light.js');
+    wp_enqueue_script('hls-light', plugin_dir_url(__FILE__) . 'js/hls.light.min.js');
 }
 
 function add_hls_snippet()
